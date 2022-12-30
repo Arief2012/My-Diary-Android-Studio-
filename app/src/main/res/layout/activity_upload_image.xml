@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadImageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/grey">
+
+        <TextView
+            android:id="@+id/tv_uploadatas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Foto Profil"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <Button
+            android:id="@+id/button_pilihimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_uploadatas"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:text="Masukan foto" />
+
+        <ImageView
+            android:id="@+id/imageview_uploadimage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/button_pilihimage"
+            android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/button_uploadimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageview_uploadimage"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="15dp"
+            android:text="Upload"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar_profil"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="150dp"
+            android:visibility="gone"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

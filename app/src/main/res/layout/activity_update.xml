@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:focusable="false"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Tanggal"
+                android:importantForAutofill="no" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <CheckBox
+                    android:id="@+id/checboxPagi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pagi" />
+
+                <CheckBox
+                    android:id="@+id/checboxSiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Siang" />
+
+                <CheckBox
+                    android:id="@+id/checkboxMalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Malam" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rbtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Level Prioritas "
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rbGrup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbhigh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Highest" />
+
+                    <RadioButton
+                        android:id="@+id/rbmedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Medium" />
+
+                    <RadioButton
+                        android:id="@+id/rblow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Lowest" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spkategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/Kategori"
+                android:focusable="true"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="343dp" />
+
+            <EditText
+                android:id="@+id/edjudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Title"
+                android:importantForAutofill="no"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edcatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Catatan"
+                android:importantForAutofill="no" />
+
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/textfoto"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Upload Gambar"-->
+            <!--        android:textColor="@color/black"-->
+            <!--        android:textStyle="normal"-->
+            <!--        android:layout_gravity="center"-->
+            <!--        android:textSize="20sp"-->
+            <!--        android:layout_marginTop="20sp"-->
+            <!--        android:layout_marginBottom="10dp"/>-->
+
+            <!--    <RelativeLayout-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content">-->
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/imageView"-->
+            <!--            android:layout_width="220dp"-->
+            <!--            android:layout_height="120dp"-->
+            <!--            android:layout_centerHorizontal="true"-->
+            <!--            android:background="#ccc"-->
+            <!--            android:onClick="openAlertDialog"-->
+            <!--            android:scaleType="centerInside"-->
+            <!--            android:src="@drawable/ic_baseline_image_24" />-->
+            <!--    </RelativeLayout>-->
+            <Button
+                android:id="@+id/btn_simpan"
+                style="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="sans-serif-condensed"
+                android:outlineAmbientShadowColor="@android:color/black"
+                android:text="Simpan" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

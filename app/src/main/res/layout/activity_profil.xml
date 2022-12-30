@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ProfilActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-2795621678161728/9471737087">
+
+                    </com.google.android.gms.ads.AdView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageProfil"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_baseline_person_24" />
+
+                    <TextView
+                        android:id="@+id/tvProfil_welcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Loading..."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ProgressBar
+                    android:id="@+id/progressbar_profil"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="150dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--                    Text View Nama-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Nama Lengkap"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvProfil_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_profil"
+                        android:drawableStart="@drawable/ic_baseline_person_24"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <!--                    Text View Alamat-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Alamat"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/tvProfil_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_profil"
+                        android:drawableStart="@drawable/ic_baseline_location_on_24"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <!--                    Text View NO Telp-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="No Telp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/tvProfil_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_profil"
+                        android:drawableStart="@drawable/ic_baseline_phone"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <!--                    Text View Tempat Lahir-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Tempat Lahir"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/tvPofil_tmplahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_profil"
+                        android:drawableStart="@drawable/ic_baseline_add_location_lahir"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <!--                    TextView Tanggal Lahir-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Tanggal Lahir"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvProfil_tgllahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_profil"
+                        android:drawableStart="@drawable/ic_baseline_date_lahir"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <!--                    Text View Gender-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Jenis Kelamin"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvProfil_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_profil"
+                        android:drawableStart="@drawable/ic_baseline_gender"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <!--                    Text View Email-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Email"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvProfil_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="70dp"
+                        android:background="@drawable/background_profil"
+                        android:drawableStart="@drawable/ic_baseline_email_24"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_btn"
+        android:elevation="3dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selected"
+        app:itemRippleColor="@color/lightblue"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/item_nav" />
+</RelativeLayout>

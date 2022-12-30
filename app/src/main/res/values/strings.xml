@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Diary</string>
+
+    <string-array name="Kategori">
+        <item>Pilih Kategori</item>
+        <item>keuangan</item>
+        <item>pekerjaan</item>
+        <item>sekolah</item>
+        <item>hiburan</item>
+
+    </string-array>
+</resources>
